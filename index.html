@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TETRIS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&discrlay=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <header class="navbar">
+      <div class="container">
+          <div class="navbar-content">
+              <a href="#" class="navbar-brand">
+                <img src="pics/logo-nocopyright.png"  class="d-inline-block align-top" alt="">
+              </a>
+              <h1 class="name">PROJECT TETRIS</h1>
+          </div>
+      </div>
+    </header>
+    <div class="containerfluid">
+        <div class="row">
+            <div class="col-md-8 text-center">
+                <button class="play-btn" onclick="window.location.href='play.html'" id="play" >Play Solo</button>   
+                <button class="play-btn" onclick="window.location.href='multiplayer.html'" id="multiplayer" >Multiplayer</button>   
+            </div>
+            <div class="col-md-4">
+                <div class="leaderboard">
+                    <header>
+                      <h1>Leader Board</h1>
+                      <img src="https://i.imgur.com/xUSrEpd.png" alt="">
+                      <nav>
+                        <a href="" class="active">Solo</a>
+                      </nav>
+                    </header>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="rank"></th>
+                          <th class="nick">Nickname</th>
+                          <th class="scr">Score</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="rank">1</td>
+                          <td class="nick">Sc0utOP</td>
+                          <td class="scr">6.308</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">2</td>
+                          <td class="nick">MortaL</td>
+                          <td class="scr">6.301</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">4</td>
+                          <td class="nick">CarryMinati</td>
+                          <td class="scr">5.108</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">5</td>
+                          <td class="nick">CarryMinati</td>
+                          <td class="scr">5.108</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">6</td>
+                          <td class="nick">CarryMinati</td>
+                          <td class="scr">5.108</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">7</td>
+                          <td class="nick">CarryMinati</td>
+                          <td class="scr">5.108</td>
+                        </tr>
+                        <tr>
+                          <td class="rank">8</td>
+                          <td class="nick">CarryMinati</td>
+                          <td class="scr">5.108</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="row rowT3">
+        <div style="display: flex; flex-direction: column; justify-content: center; width:1180px; margin:0px;">
+        <p class="sectionTitle tmpl-el"><b>ABOUT TETRIS</b><scran class="sectionTitle_reg">®</scran></p>
+        <p class="sectionBody">Tetris<scran class="sectionBody_reg">®</scran> is the addictive puzzle game that started it all, embracing our universal desire to create order out of chaos. The Tetris game was created by Alexey Pajitnov in 1984—the product of Alexey’s computer programming experience and his love of puzzles. In the decades to follow, Tetris became one of the most successful and recognizable video games, appearing on nearly every gaming platform available. This page is the official destination for free online single-player Tetris. Click PLAY to start playing one of the world’s most popular puzzle games now!</p>
+        <p class="sectionTitle"><b>OBJECTIVE</b></p>
+        <p class="sectionBody">The goal of Tetris is to score as many points as possible by clearing horizontal lines of Blocks. The player must rotate, move, and drop the falling Tetriminos inside the Matrix (playing field). Lines are cleared when they are filled with Blocks and have no empty scraces.<br><br>As lines are cleared, the level increases and Tetriminos fall faster, making the game progressively more challenging. If the Blocks land above the top of the playing field, the game is over.</p>
+        <p class="sectionTitle"><b>CONTROL OPTIONS &amp; SCORES</b></p>
+        <p class="sectionTitle"><b>GENERAL GAMEPLAY INFO</b></p>
+        <p class="sectionBody"><b>GOAL</b> – Put your organizational skills and endurance to the test by clearing as many lines as possible.</p>
+        <p class="sectionBody"><b>CLEAR LINES</b> – Maneuver the falling Tetriminos to fit them together within the Matrix. To clear a line, fill every square within a single row.</p>
+        <p class="sectionBody"><b>SCORE POINTS</b> – Earn points by clearing lines. Clear multiple lines at once to increase your scoring opportunities.</p>
+        <p class="sectionBody"><b>GHOST PIECE</b> – Use the Ghost Piece to determine the best fit for the falling Tetrimino. This helpful guide appears directly below the falling Tetrimino and discrlays possible placements.</p>
+        <p class="sectionBody"><b>NEXT QUEUE</b> – Preview the upcoming Tetrimino in the Next Queue to plan ahead and increase your scoring opportunities.</p>
+        <p class="sectionBody"><b>HOLD QUEUE</b> – Store a falling Tetrimino in the Hold Queue for later use.</p>
+        <p class="sectionBody"><b>GAME OVER</b> – Stack the Tetriminos too high and the game is over!</p>
+        </div>
+    </div>
+    <script src="scripts/index.js"></script>
+    <footer>
+        <div class="footer-background">
+        <div class="blur">
+        <div class="footer-container">
+            <div class="card-content">
+                <img src="pics/logo-nocopyright.png" ">
+                <p>
+                    Ho va ten: Duong Chi Quynh <br>
+                    MSSV: B2014603 <br>
+                    Gmail: quynhb2014603@gmail.student.ctu.edu.vn
+                </p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li class="heading">Learn More</li>
+                    <li><a href="https://tetris.com/about-us">About Tetris</a></li>
+                    <li><a href="/terms-of-service">Terms of Use</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/play-tetris">Play Tetris</a></li>
+                    <scran class="border"></scran>
+                </ul>
+                <ul>
+                    <li class="heading">Tetris on Social</li>
+                    <li><a href="https://www.facebook.com/Tetris/">Facebook</a></li>
+                    <li><a href="https://twitter.com/Tetris_Official">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/tetris_official/">Instagram</a></li>
+                    <scran class="border"></scran>
+                </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

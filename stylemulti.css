@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(pics/galaxy-wallpapers.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#board1,
+#board2 {
+    border: 2px solid #333;
+}
+
+.side-bar {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+button.play-btn {
+    margin-top: 290px;
+}
